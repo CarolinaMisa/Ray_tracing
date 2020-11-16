@@ -1,0 +1,35 @@
+camera {
+    look_at <1, 0, 1>
+    location <0, 0, -1>
+    angle 30
+    up <0, 1, 0>
+}
+
+light_source {
+    <2, 5, 2>, rgb<1, 1, 1>
+}
+
+sphere {
+    <0, 0, 6>, 1
+    texture {
+       pigment { rgb <0, 1, 0> }
+    }
+}
+
+sphere {
+    <0.2, -0.3, 2>, 0.6
+    texture {
+       pigment { rgb <1, 0, 0> }
+    }
+}
+
+plane {
+    <1, 2, 3>, 6
+}
+
+triangle {
+    <-0.5, 0, 5.5>, <0, 0.5, 5.5>, <0.5, 0, 5.5>
+    texture {
+       pigment { rgb <0, 1, 1> }
+    }
+}
